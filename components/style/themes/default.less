@@ -21,6 +21,10 @@
 @white: #fff;
 @black: #000;
 
+// -------- Cybernomads colors ------
+@cybernomads-yellow: #FEF54C;
+@cybernomads-black: @black;
+
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
 @primary-1: color(~`colorPalette('@{primary-color}', 1) `); // replace tint(@primary-color, 90%)
@@ -176,8 +180,8 @@
 @btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 @btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
-@btn-primary-color: #fff;
-@btn-primary-bg: @primary-color;
+@btn-primary-color: @cybernomads-black;
+@btn-primary-bg: @cybernomads-yellow;
 
 @btn-default-color: @text-color;
 @btn-default-bg: @component-background;
