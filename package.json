@@ -48,7 +48,8 @@
   "scripts": {
     "api-collection": "antd-tools run api-collection",
     "authors": "node ./scripts/generate-authors",
-    "build": "npm run compile && NODE_OPTIONS='--max-old-space-size=4096' npm run dist",
+    "build": "node build_fork.js",
+    "build:original": "npm run compile && NODE_OPTIONS='--max-old-space-size=4096' npm run dist",
     "bundlesize": "bundlesize",
     "check-commit": "node ./scripts/check-commit",
     "prestart": "npm run version",
